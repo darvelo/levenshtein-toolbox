@@ -1,0 +1,15 @@
+node_modules
+bower_components
+.tmp
+
+# vim-related
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+.vimrc
+*~
+
+# TernJS
+.tern-project
