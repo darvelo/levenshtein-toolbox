@@ -2,7 +2,12 @@
   "name": "levenshtein-toolbox",
   "description": "Customizable comparison of a string against another full string or substring.",
   "main": "lib/levenshtein.js",
-  "moduleType": "es6",
+  "moduleType": [
+    "globals",
+    "amd",
+    "node",
+    "es6"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
