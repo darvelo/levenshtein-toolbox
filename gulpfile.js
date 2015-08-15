@@ -6,7 +6,7 @@ var uglify = require('gulp-uglify');
 
 // dir vars
 var src = 'lib/levenshtein.js';
-var dest = 'dest/';
+var dest = 'dist/';
 
 // tasks
 gulp.task('clean', function(cb) {
