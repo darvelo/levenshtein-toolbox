@@ -5,7 +5,8 @@ var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 
 // dir vars
-var src = 'lib/levenshtein-toolbox.js';
+var srcRoot = 'lib/';
+var src = srcRoot + 'levenshtein-toolbox.js';
 var dest = 'dist/';
 
 // tasks
@@ -32,7 +33,7 @@ gulp.task('build:amd', ['clean'], function() {
         .pipe(babel({
             modules: 'amd',
             moduleIds: true,
-            sourceRoot: __dirname + '/js',
+            sourceRoot: __dirname + '/' + srcRoot,
             moduleRoot: null,
             experimental: 2,
         }))

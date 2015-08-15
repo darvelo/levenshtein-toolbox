@@ -1,1 +1,1 @@
-module.exports = require('./dist/levenshtein.commonjs.js');
+module.exports = require('./dist/levenshtein-toolbox.commonjs.js');
