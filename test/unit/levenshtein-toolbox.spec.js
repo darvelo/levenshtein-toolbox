@@ -1,4 +1,4 @@
-import Levenshtein from '../../lib/levenshtein';
+import Levenshtein from '../../lib/levenshtein-toolbox';
 
 describe('Levenshtein', function() {
     describe('General', function () {

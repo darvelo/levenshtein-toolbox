@@ -1,4 +1,4 @@
-define('levenshtein', ['exports', 'module'], function (exports, module) {
+define('levenshtein-toolbox', ['exports', 'module'], function (exports, module) {
     'use strict';
 
     var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
@@ -9,14 +9,14 @@ define('levenshtein', ['exports', 'module'], function (exports, module) {
     var INSERT = 1;
     var DELETE = 2;
 
-    var Levenshtein = (function () {
-        function Levenshtein(options) {
-            _classCallCheck(this, Levenshtein);
+    var LevenshteinToolbox = (function () {
+        function LevenshteinToolbox(options) {
+            _classCallCheck(this, LevenshteinToolbox);
 
             options = typeof options === 'object' ? options : {};
 
-            if (!(this instanceof Levenshtein)) {
-                return new Levenshtein(options);
+            if (!(this instanceof LevenshteinToolbox)) {
+                return new LevenshteinToolbox(options);
             }
 
             this.caseSensitive = !!options.caseSensitive;
@@ -24,7 +24,7 @@ define('levenshtein', ['exports', 'module'], function (exports, module) {
             this.set('type', options.type);
         }
 
-        _createClass(Levenshtein, [{
+        _createClass(LevenshteinToolbox, [{
             key: '_initFirstRowWhole',
             value: function _initFirstRowWhole() {
                 var m = this.m;
@@ -410,10 +410,10 @@ define('levenshtein', ['exports', 'module'], function (exports, module) {
             }
         }]);
 
-        return Levenshtein;
+        return LevenshteinToolbox;
     })();
 
-    module.exports = Levenshtein;
+    module.exports = LevenshteinToolbox;
 
     // vim: shiftwidth=4
 });

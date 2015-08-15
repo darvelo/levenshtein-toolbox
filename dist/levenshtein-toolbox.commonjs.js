@@ -12,14 +12,14 @@ var MATCH = 0;
 var INSERT = 1;
 var DELETE = 2;
 
-var Levenshtein = (function () {
-    function Levenshtein(options) {
-        _classCallCheck(this, Levenshtein);
+var LevenshteinToolbox = (function () {
+    function LevenshteinToolbox(options) {
+        _classCallCheck(this, LevenshteinToolbox);
 
         options = typeof options === 'object' ? options : {};
 
-        if (!(this instanceof Levenshtein)) {
-            return new Levenshtein(options);
+        if (!(this instanceof LevenshteinToolbox)) {
+            return new LevenshteinToolbox(options);
         }
 
         this.caseSensitive = !!options.caseSensitive;
@@ -27,7 +27,7 @@ var Levenshtein = (function () {
         this.set('type', options.type);
     }
 
-    _createClass(Levenshtein, [{
+    _createClass(LevenshteinToolbox, [{
         key: '_initFirstRowWhole',
         value: function _initFirstRowWhole() {
             var m = this.m;
@@ -413,10 +413,10 @@ var Levenshtein = (function () {
         }
     }]);
 
-    return Levenshtein;
+    return LevenshteinToolbox;
 })();
 
-exports['default'] = Levenshtein;
+exports['default'] = LevenshteinToolbox;
 
 // vim: shiftwidth=4
 module.exports = exports['default'];

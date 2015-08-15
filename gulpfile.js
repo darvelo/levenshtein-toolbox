@@ -5,7 +5,7 @@ var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 
 // dir vars
-var src = 'lib/levenshtein.js';
+var src = 'lib/levenshtein-toolbox.js';
 var dest = 'dist/';
 
 // tasks

@@ -10,7 +10,7 @@ Calculate Levenshtein distance and much more!
 $ bower install levenshtein-toolbox --save
 ```
 
-Use your favorite flavor in the `dist/` directory.
+Use your favorite flavor in the `dist/` directory. Under AMD it uses the module name: `levenshtein-toolbox`. As a global, use: `LevenshteinToolbox`.
 
 **Using npm:**
 
