@@ -1,6 +1,6 @@
 {
   "name": "levenshtein-toolbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Customizable comparison of a string against another full string or substring.",
   "keywords": [
     "levenshtein",
