@@ -1,4 +1,16 @@
-# Calculate Levenshtein distance and much more!
+# Intro
+
+Calculate Levenshtein distance and much more!
+
+# Install
+
+```bash
+$ bower install levenshtein-toolbox --save
+```
+
+Use your favorite flavor in the `dist/` directory.
+
+# Usage
 
 Not only can you calculate the edit distance between any two strings with this library. You can also:
 
