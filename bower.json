@@ -1,24 +1,28 @@
 {
-  "name": "levenshtein-edit-dist",
-  "version": "1.0.0",
-  "homepage": "http://github.com/darvelo/levenshtein-edit-dist",
+  "name": "levenshtein-toolbox",
   "description": "Customizable comparison of a string against another full string or substring.",
-  "private": false,
-  "author": "David Arvelo",
+  "main": "lib/levenshtein.js",
+  "moduleType": "es6",
   "license": "MIT",
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --recursive"
-  },
-  "devDependencies": {
-    "babel": "^5.8.19",
-    "chai": "^3.0.0",
-    "del": "^1.2.0",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.2.0",
-    "mocha": "^2.2.5",
-    "sinon": "^1.15.4",
-    "sinon-chai": "^2.8.0"
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "levenshtein",
+    "edit",
+    "distance",
+    "string"
+  ],
+  "authors": [
+    { "name": "David Arvelo", "homepage": "http://davidarvelo.com" }
+  ],
+  "homepage": "http://github.com/darvelo/levenshtein-toolbox",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/darvelo/levenshtein-toolbox.git"
   }
 }
