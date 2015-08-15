@@ -4,11 +4,21 @@ Calculate Levenshtein distance and much more!
 
 # Install
 
+**Using bower:**
+
 ```bash
 $ bower install levenshtein-toolbox --save
 ```
 
 Use your favorite flavor in the `dist/` directory.
+
+**Using npm:**
+
+```bash
+$ npm install levenshtein-toolbox --save
+```
+
+Use `var x = require('levenshtein-toolbox')` in your code.
 
 # Usage
 
