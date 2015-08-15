@@ -8,7 +8,7 @@ You can view each step taken in the process of converting your pattern string (f
 
 Examples:
 
-```
+```javascript
 var l = new Levenshtein();
 var matches = 0;
 var substitutions = 0;
@@ -41,7 +41,7 @@ if (matches/len > 0.8) {
 }
 ```
 
-```
+```javascript
 var l = new Levenshtein({
     caseSensitive: false,
 });
@@ -89,7 +89,7 @@ Typically edit distance is done against both whole strings, but you can match yo
 
 Examples:
 
-```
+```javascript
 var patternString = 'science';
 var text = 'do it for science!!';
 var l = new Levenshtein({
@@ -118,7 +118,7 @@ All initial insertions when `type: substring` are free until the cheapest path b
 
 Examples:
 
-```
+```javascript
 // the "matchCost" function dictates the cost when both
 // letters in both strings match, and if they don't match,
 // the cost of doing a substitution from the first to the second.
